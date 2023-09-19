@@ -1,0 +1,23 @@
+<!-- views/index.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">   
+
+  <title>Playlist de Spotify de {{owner.display_name}}</title>
+</head>
+<body>
+  <h1>Playlist de Spotify de {{owner.display_name}}</h1>
+  <ul>
+    {{#each playlists}}
+      <li>
+        <h2>Nombre de playlist : {{name}}</h2>
+      </li>
+      <li><a href="{{external_urls.spotify}}">Abrir Playlist</a></li>
+    {{/each}}
+  </ul>
+</body>
+</html>

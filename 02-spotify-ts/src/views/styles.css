@@ -1,0 +1,236 @@
+html,body {
+    text-align: left;
+    background: #F8F8FF ;
+    margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: Poppins ;
+    src: url(https://fonts.google.com/specimen/Poppins?query=Pop);
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(https://fonts.google.com/specimen/Jost?query=Jost#standard-styles);
+    font-style: normal;
+}
+
+p{
+    font-family: Poppins;
+    font-weight: 100;
+    font-size: 16px;
+    
+}
+
+
+h1{
+    font-family: Poppins;
+    line-height: 2em;
+    font-weight: 600;
+    line-height: 1.3em;
+    
+    font-style: inherit;
+    animation-duration: 3s;
+    animation-name: slidein;
+    overflow:hidden;
+  }
+
+  h2{
+      font-family: Poppins;
+  }
+
+  h3{
+    font-family: Poppins;
+}
+
+
+
+
+
+
+  .header{
+      background-color:#201E1E ;
+      color: white;
+      position: fixed;
+      left:0;
+      top:0;
+      width: 100%;
+  }
+
+  .header a{
+    color:  white;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  
+  
+  @keyframes slidein {
+    from {
+      margin-left: 80%;
+      width: 45%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+.container{
+    width: 75%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+section{
+    width:100%;
+    margin-bottom: 25px;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+ul li {
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.navigation ul li a {
+    display:block;
+    padding: 0.5rem 1rem;
+}
+
+.navigation ul li:hover{
+    background-color: #093147;
+}
+
+.footer{
+    background-color:#201E1E;
+    color: white;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 14px;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+  
+}
+
+
+
+
+
+#banner{
+    height: 485px;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+#banner img{
+    width: 100%;
+    height: auto;
+    margin-top: -300px;
+}
+
+#banner .contenedor{
+    margin-left: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+
+}
+
+#banner h1{
+    font-size: 50px;
+}
+
+.Parrafos{
+    margin-top: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
+    width: 80%;
+}
+
+.Parrafos p{
+    max-width: 700px;
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.Parrafos h2{
+font-family: Poppins;
+font-size: 30px;
+}
+
+.Parrafos li{
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+
+a[href="https://www.ajpmonline.org/article/S0749-3797(04)00338-1/pdf"]{
+    color:blue;
+    font-family: Poppins;
+}
+
+a[ href="http://imss.gob.mx/sites/all/statics/salud/guias_salud/adultos_mayores/Guia_adultosmay_nutricion.pdf"] {
+    color:blue;
+    font-family: Poppins;
+} 
+                
+
+
+.Frases{
+    font-size: 40px;
+    font-family: Jost;
+    color: #093147;
+    font-weight: 600;
+    width: 85%;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+    font-family: Jost;
+    align-content: center ;
+    border-color: #093147;;
+    
+  }
+
+    td:hover {background-color:#AFCFBE;}
+
+
+    @media (max-width: 1000px){
+
+        #banner h1{
+            font-size: 24px;
+            color: black;
+        }
+    }
