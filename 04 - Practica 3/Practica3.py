@@ -31,5 +31,5 @@ def obtener_informacion_ubicacion(geonames_username, lugar):
 if __name__ == "__main__":
     #tu_api_key_de_openweathermap
     geonames_username = "zerabi"
-    lugar = "Montevideo"
+    lugar = "Londres"
     obtener_informacion_ubicacion(geonames_username, lugar)
