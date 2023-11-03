@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Estudiantes</title>
+    <bookmarks>
+        <bookmark name="Estudiantes" href="#estudiantes"></bookmark>
+    </bookmarks>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body>
+<span class="titles-style" th:text="|Estudiantes / Count: ${#lists.size(students)}|"></span>
+
+<!-- Students Table -->
+<div id="students">
+    <div th:if="${not #lists.isEmpty(students)}">
+        <table class="table-cell">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Primer apellido</th>
+                <th>Nationalidad</th>
+                <th>Universidad</th>
+                <th>Activo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="student : ${students}">
+                <td th:text="${student?.id}"></td>
+                <td th:text="${student?.name}"></td>
+                <td th:text="${student?.lastName}"></td>
+                <td th:text="${student?.nationality}"></td>
+                <td th:text="${student?.university}"></td>
+                <td th:text="${student?.active}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
